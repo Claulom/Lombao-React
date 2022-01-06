@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import NavBar from './components/navegacion/NavBar';
+import Inicio from './components/paginas/Inicio';
+import Formulario from './components/paginas/Formulario';
+import Mas from './components/paginas/Mas';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Bienvenidos!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Este sera el proyecto de Lombao, Claudio
-        </a>
-      </header>
+
+      <Router>
+        <NavBar/>
+       <Routes>
+          <Route path='/' exact element={<Inicio/>}/>
+          <Route path='Formulario' element={<Formulario/>}/>
+          <Route path='Mas' element={<Mas/>}/>
+          </Routes> 
+      </Router>
+
     </div>
   );
 }
