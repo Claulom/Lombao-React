@@ -21,6 +21,8 @@ const NavBar = () => {
         <li className="nav-item">
           <Link className="nav-link" to='/Mas' >Más</Link>
         </li>
+        
+        <span className="nav-link active fas fa-cart-plus">Add to Cart</span>
       
       </ul>
     </div>
