@@ -5,6 +5,7 @@ import Inicio from './components/paginas/Inicio';
 import Formulario from './components/paginas/Formulario';
 import Mas from './components/paginas/Mas';
 import ItemCard from "./components/cards/ItemCard";
+import ItemCount from "./components/paginas/ItemCount";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
 
       <Router>
         <NavBar/>
+      <ItemCount stock="10" initial="1"/>
       <fragment>
       <ItemCard name="Producto" price="$2000"/>
       <ItemCard name="Producto" price="$3000"/>
