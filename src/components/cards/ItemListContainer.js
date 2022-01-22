@@ -1,16 +1,20 @@
-import React from 'react'
-import {ItemCount} from "../paginas/ItemCount";
-import {ItemListCard} from "./ItemListCard"; 
-import "./ItemCard";
+import {useEffect, useState} from 'react';
+import {getArticulos} from "./db";
+import {ItemCard} from "./ItemCard";
 
 
-export const ItemListContainer = () => {
+export function ItemListContainer() {
+    const [articulos, setArticulos] = useState([]);
+
+    useEffect(() => {
+        getArticulos()
+        .then((data) => setArticulos(data))
+        .catch((error) =>console.error(error))
+
+    }, []);
     return (
         <div>
-            <>
-            <ItemListCard/>
-           <ItemCount stock="12" initial="1"/>
-    </>
+            {articulos.map((articulos) => (<ItemCard key={articulos.id} articulo={articulos} />))} 
         </div>
     );
 };

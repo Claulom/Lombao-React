@@ -1,150 +1,159 @@
+export const articulo = [
+
 {
-    "productos":{
+    
         "id": 1,
         "name": "Zapatillas",
         "price": 15000,
         "desciption": "Descripcion del producto",
         "stock": 500,
         "img": "https://picsun.photos/200"
-    }
-}
+    
+},
 {
-    "productos":{
+    
         "id": 1,
-        "name": "Zapatillas",
+        "name": "Mochila",
         "price": 15000,
         "desciption": "Descripcion del producto",
         "stock": 500,
         "img": "https://picsun.photos/200"
-    }
-}
+   
+},
 {
-    "productos":{
+    
         "id": 1,
-        "name": "Zapatillas",
+        "name": "Campera",
         "price": 15000,
         "desciption": "Descripcion del producto",
         "stock": 500,
         "img": "https://picsun.photos/200"
-    }
-}
+    
+},
 {
-    "productos":{
+    
         "id": 1,
-        "name": "Zapatillas",
+        "name": "Botas",
         "price": 15000,
         "desciption": "Descripcion del producto",
         "stock": 500,
         "img": "https://picsun.photos/200"
-    }
-}
+    
+},
 {
-    "productos":{
+    
         "id": 1,
-        "name": "Zapatillas",
+        "name": "Reloj",
         "price": 15000,
         "desciption": "Descripcion del producto",
         "stock": 500,
         "img": "https://picsun.photos/200"
-    }
-}
+    
+},
 {
-    "productos":{
+    
         "id": 1,
-        "name": "Zapatillas",
+        "name": "Buzo",
         "price": 15000,
         "desciption": "Descripcion del producto",
         "stock": 500,
         "img": "https://picsun.photos/200"
-    }
-}
+    
+},
 {
-    "productos":{
+    
         "id": 1,
-        "name": "Zapatillas",
+        "name": "Short",
         "price": 15000,
         "desciption": "Descripcion del producto",
         "stock": 500,
         "img": "https://picsun.photos/200"
-    }
-}
+    
+},
 {
-    "productos":{
+    
         "id": 1,
-        "name": "Zapatillas",
+        "name": "Pollera",
         "price": 15000,
         "desciption": "Descripcion del producto",
         "stock": 500,
         "img": "https://picsun.photos/200"
-    }
-}
+    
+},
 {
-    "productos":{
+    
         "id": 1,
-        "name": "Zapatillas",
+        "name": "Musculosa",
         "price": 15000,
         "desciption": "Descripcion del producto",
         "stock": 500,
         "img": "https://picsun.photos/200"
-    }
-}
+    
+},
 {
-    "productos":{
+    
         "id": 1,
-        "name": "Zapatillas",
+        "name": "Gorra",
         "price": 15000,
         "desciption": "Descripcion del producto",
         "stock": 500,
         "img": "https://picsun.photos/200"
-    }
-}
+    
+},
 {
-    "productos":{
+    
         "id": 1,
-        "name": "Zapatillas",
+        "name": "Cinturon",
         "price": 15000,
         "desciption": "Descripcion del producto",
         "stock": 500,
         "img": "https://picsun.photos/200"
-    }
-}
+    
+},
 {
-    "productos":{
+    
         "id": 1,
-        "name": "Zapatillas",
+        "name": "Camisa",
         "price": 15000,
         "desciption": "Descripcion del producto",
         "stock": 500,
         "img": "https://picsun.photos/200"
-    }
-}
+    
+},
 {
-    "productos":{
+    
         "id": 1,
-        "name": "Zapatillas",
+        "name": "Bolso",
         "price": 15000,
         "desciption": "Descripcion del producto",
         "stock": 500,
         "img": "https://picsun.photos/200"
-    }
-}
+    
+},
 {
-    "productos":{
+    
         "id": 1,
-        "name": "Zapatillas",
+        "name": "Billetera",
         "price": 15000,
         "desciption": "Descripcion del producto",
         "stock": 500,
         "img": "https://picsun.photos/200"
-    }
-}
+    
+},
 {
-    "productos":{
+    
         "id": 1,
-        "name": "Zapatillas",
+        "name": "Riñonera",
         "price": 15000,
         "desciption": "Descripcion del producto",
         "stock": 500,
         "img": "https://picsun.photos/200"
-    }
-}
+    
+},
+]
+
+export function getArticulos() {
+    return new Promise((resolve, reject) =>{
+        setTimeout (() => resolve(articulo), 2000);
+    });
+};
