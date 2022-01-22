@@ -1,12 +1,25 @@
-.itemCard{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1%;
-    border: 1px solid blue;
-    height: auto;
-    width: 30%;
-    box-sizing: content-box;
+.galeria{
+    display: grid;
+    padding-left: 5%;
 }
+
+.container-card-class{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+.itemCard{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #f1f1ec;
+    max-width: 100%;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+} 
 
 .contador-click{
     display: flex;

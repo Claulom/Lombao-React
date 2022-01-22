@@ -1,22 +1,15 @@
-import {useEffect, useState} from 'react';
-import {getArticulos} from "./db";
-import {ItemCard} from "./ItemCard";
+import React from 'react'
+import { ItemListCard } from './ItemListCard'
+import './card.css';
 
-
-export function ItemListContainer() {
-    const [articulos, setArticulos] = useState([]);
-
-    useEffect(() => {
-        getArticulos()
-        .then((data) => setArticulos(data))
-        .catch((error) =>console.error(error))
-
-    }, []);
+export const ItemListContainer = () => {
     return (
-        <div>
-            {articulos.map((articulos) => (<ItemCard key={articulos.id} articulo={articulos} />))} 
+        <div className="container-card-class">
+            <ItemListCard/>
         </div>
-    );
-};
+    )
+}
+
+
 
 

@@ -5,8 +5,10 @@ import './card.css';
 
 export const ItemCard = ({ articulo }) => {
     return (
+        <div className="galeria">
+        <div clasName="container-card-class">
         <div className="itemCard">
-            <p>Imagen:</p>
+            <img src={articulo.img} alt={articulo.name}/>
             <p>ID:{articulo.id}</p>
             <p>Nombre:{articulo.name}</p>
             <p>Precio:{articulo.price}</p>
@@ -14,8 +16,8 @@ export const ItemCard = ({ articulo }) => {
             <button>Mostrar detalle de producto</button>
             <ItemCount stock={articulo.stock} initial="1"/>
         </div>
-
-
+        </div>
+        </div>
     );
 };
 
