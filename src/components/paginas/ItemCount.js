@@ -1,15 +1,15 @@
 import React from 'react'
 import "../cards/card.css";
-const ItemCount = ({onAdd}) => {
+export const ItemCount = ({stock,onAdd}) => {
 
     let min = 1;
-    let max = 10;
-
+    /* let stock;
+ */
  const [add, setAdd] = React.useState(min);
 
  function increment(){
      const newValue = add + 1;
-     if(newValue<=max){
+     if(newValue<=stock){
          setAdd(newValue);
      }
  }
@@ -34,4 +34,4 @@ function onAdd(){
     )
 }
 
-export default ItemCount
+

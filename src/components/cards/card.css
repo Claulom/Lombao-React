@@ -3,7 +3,7 @@
     margin-right: auto;
     margin-top: 1%;
     border: 1px solid blue;
-    height: 100px;
+    height: auto;
     width: 30%;
     box-sizing: content-box;
 }
