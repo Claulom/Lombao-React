@@ -1,25 +1,28 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import NavBar from './components/navegacion/NavBar';
 import Inicio from './components/paginas/Inicio';
 import Formulario from './components/paginas/Formulario';
 import Mas from './components/paginas/Mas';
-import {ItemListContainer} from './components/cards/ItemListContainer';
-/* import ItemCard from "./components/cards/ItemCard";  */
+/* import {ItemListContainer} from './components/cards/ItemListContainer'; */
+import { ItemDetailProduct } from './components/cards/ItemDetailProduct';
+
 
 function App() {
   return (
     <div className="App">
 
-      <Router>
+      <BrowserRouter>
         <NavBar/>
        <Routes>
-          <Route path='/' exact element={<Inicio/>}/>
+          <Route path='/'> 
+          <Route index element={<Inicio/>}/>
           <Route path='Formulario' element={<Formulario/>}/>
           <Route path='Mas' element={<Mas/>}/>
+          </Route>
           </Routes> 
-      </Router>
-    <ItemListContainer/>
+      </BrowserRouter>
+    <ItemDetailProduct/>
     </div>
   );
 }

@@ -3,8 +3,7 @@ import "../cards/card.css";
 export const ItemCount = ({stock,onAdd}) => {
 
     let min = 1;
-    /* let stock;
- */
+ 
  const [add, setAdd] = React.useState(min);
 
  function increment(){

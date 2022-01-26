@@ -20,7 +20,7 @@ export function ItemListCard() {
             <div className="container-card-class">
             {cargando ? 
             (<p>Cargando...</p>) : 
-            (articulos.map((articulo) => (<ItemCard key={articulo.id} articulo={articulo} />)) )}
+            (articulos?.map((articulo) => (<ItemCard key={articulo.id} articulo={articulo} />)) )}
             </div>
         </div>
     );
