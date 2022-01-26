@@ -20,13 +20,14 @@ function App() {
        <Routes>
           <Route path='/'> 
           <Route index element={<Inicio/>}/>
-          <Route path='Formulario' element={<Formulario/>}/>
-          <Route path='Mas' element={<Mas/>}/>
+          <Route path='formulario' element={<Formulario/>}/>
+          </Route>
+          <Route path='mas'/>
+          <Route index element={<Mas/>}/>
           <Route path="ItemDetailContainer">
-          <Route index element={<ItemListDetail/>} />
-           <Route path=':productosId' element={<ItemDetailProduct/>}/>    
+           <Route path=':productosId' element={<ItemDetailContainer/>}/>    
           </Route>
-          </Route>
+       
           </Routes> 
       </BrowserRouter>
           <ItemListContainer/>
