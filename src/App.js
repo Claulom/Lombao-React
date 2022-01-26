@@ -5,7 +5,7 @@ import Inicio from './components/paginas/Inicio';
 import Formulario from './components/paginas/Formulario';
 import Mas from './components/paginas/Mas';
 /* import {ItemListContainer} from './components/cards/ItemListContainer'; */
-import { ItemDetailProduct } from './components/cards/ItemDetailProduct';
+import ItemDetailProduct  from './components/cards/ItemDetailProduct';
 
 
 function App() {

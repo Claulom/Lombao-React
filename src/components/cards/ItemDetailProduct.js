@@ -1,10 +1,9 @@
 import React from 'react'
-import { ItemlistDetail } from "./ItemListDetail";
 import {ItemCount} from "../paginas/ItemCount";
 
 
-export const ItemDetailProduct = () => {
-    const productos=[];
+const ItemDetailProduct = ({productos}) => {
+
     return (
         <div className="i-detail-product">
 
@@ -18,5 +17,5 @@ export const ItemDetailProduct = () => {
         </div>
     )
 }
-
+export default ItemDetailProduct
 
