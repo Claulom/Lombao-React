@@ -1,5 +1,5 @@
 import React from 'react'
-import{ItemDetailProduct} from './ItemDetailProduct'
+import ItemDetailProduct from './ItemDetailProduct'
 
 
 

@@ -1,4 +1,4 @@
-import React from 'react'
+/* import React from 'react'
 import {useEffect, useState} from 'react';
 import { useParams } from 'react-router-dom';
 import ItemDetailProduct from "./ItemDetailProduct";
@@ -27,9 +27,9 @@ return (
      <div className="galeria">
         <div className="container-card-class">
         </div>
-        <ItemDetailProduct productos={productos} />
+        <ItemDetailProduct productos={productosId} />
         </div>
         );
-    };
+    }; */
     /* { productos?.map((productos) => {
         return <ItemDetailProduct productos={productos} />})} */

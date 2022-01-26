@@ -3,6 +3,7 @@ import {ItemCount} from "../paginas/ItemCount";
 
 
 const ItemDetailProduct = ({productos}) => {
+   
 
     return (
         <div className="i-detail-product">
@@ -14,6 +15,7 @@ const ItemDetailProduct = ({productos}) => {
             <p>Stock:{productos.stock}</p>
             <p>Detalle:{productos.description}</p>
             <ItemCount stock={productos.stock} initial="1" />
+            
         </div>
     )
 }
