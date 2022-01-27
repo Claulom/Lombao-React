@@ -6,7 +6,7 @@ export const ItemCard = ({ productos }) => {
     let navigate = useNavigate();
 
     const detail = ()=>{
-        navigate("../paginas/Mas.js")
+        navigate(`/detail/${productos.id}`)
     }
     return (
         <div className="galeria">
