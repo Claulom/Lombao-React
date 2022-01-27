@@ -4,7 +4,7 @@ import {ItemCount} from "../paginas/ItemCount";
 
 const ItemDetailProduct = ({productos}) => {
    
-
+console.log(productos)
     return (
         <div className="i-detail-product">
 

@@ -27,7 +27,7 @@ return (
      <div className="galeria">
         <div className="container-card-class">
         </div>
-        <ItemDetailProduct productos={productosId} />
+        <ItemDetailProduct productos={productos} />
         </div>
         );
     }; 
