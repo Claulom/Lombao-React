@@ -2,20 +2,20 @@ import React from 'react'
 import './card.css';
 import { useNavigate } from 'react-router-dom';
 
-export const ItemCard = ({ articulos }) => {
+export const ItemCard = ({ productos }) => {
     let navigate = useNavigate();
 
     const detail = ()=>{
-        navigate(`/detail/${articulos.id}`)
+        navigate(`/detail/${productos.id}`)
     } 
     return (
         <div className="galeria">
         <div className="container-card-class">
         <div className="itemCard">
-            <img  src={articulos.img} alt={articulos.name}/>
-            <p>Nombre:{articulos.name}</p>
-            <p>Precio:{articulos.price}</p>
-            <button onClick={detail}>Ver detalle</button>
+            <img  src={productos.img} alt={productos.name} className="card-img-style-i"/>
+            <p>Nombre:{productos.name}</p>
+            <p>Precio:{productos.price}</p>
+            <button onClick={detail} className="btn-detail-item">Ver detalle</button>
         </div>
         </div>
         </div>

@@ -31,5 +31,4 @@ return (
         </div>
         );
     }; 
-    /* { productos?.map((productos) => {
-        return <ItemDetailProduct productos={productos} />})} */
+    

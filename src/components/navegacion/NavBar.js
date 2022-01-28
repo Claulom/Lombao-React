@@ -16,10 +16,10 @@ const NavBar = () => {
           <Link className="nav-link active" to='/' >Inicio</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link active" to='/Formulario' >Formulario</Link>
+          <Link className="nav-link active" to='/Productos' >Productos</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to='/Mas' >Más</Link>
+          <Link className="nav-link active" to='/Formulario' >Formulario</Link>
         </li>
         
         <span className="nav-link active fas fa-cart-plus">Add to Cart</span>

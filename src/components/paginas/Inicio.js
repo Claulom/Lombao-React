@@ -1,13 +1,11 @@
+import React from 'react'
 
-import {ItemListCard} from "../cards/ItemListCard"
-
-const inicio = () => {
+const Inicio = () => {
     return (
         <div>
-            <h1>Este es el inicio</h1>
-            <ItemListCard/>
+            <h1>Bienvenidos a CoolStore</h1>
         </div>
     )
 }
 
-export default inicio
+export default Inicio

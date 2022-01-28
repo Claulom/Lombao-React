@@ -1,11 +1,11 @@
 import './App.css';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import NavBar from './components/navegacion/NavBar';
-import Inicio from './components/paginas/Inicio';
+import Productos from './components/paginas/Productos';
 import Formulario from './components/paginas/Formulario';
-import Mas from './components/paginas/Mas';
+import Inicio from './components/paginas/Inicio';
 import { ItemListDetail } from './components/cards/ItemListDetail';
-import { ItemListCard } from './components/cards/ItemListCard';
+
 
 
 function App() {
@@ -15,15 +15,13 @@ function App() {
 
         <NavBar/>
        <Routes>
-          <Route path='/'> 
-          <Route index element={<Inicio/>}/>
-      
+          <Route path='/' index element={<Inicio/>}/> 
           <Route path='formulario' element={<Formulario/>}/>
-          </Route>
-          <Route path='mas'/>
-          <Route index element={<Mas/>}/>
+          <Route>
+          <Route path='Productos'element={<Productos/>}/>
           <Route path="detail">
            <Route path=':productosId' element={<ItemListDetail/>}/>    
+          </Route>
           </Route>
        
           </Routes> 

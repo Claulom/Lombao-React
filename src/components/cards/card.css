@@ -1,3 +1,12 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background: rgb(34,193,195);
+    background: linear-gradient(135deg, rgba(34,193,195,1) 23%, rgba(253,247,45,1) 100%); }
+
+
 .galeria{
     display: grid;
     padding-left: 5%;
@@ -10,16 +19,22 @@
 }
 
 .itemCard{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    background-color: #f1f1ec;
+    background-color: rgb(226, 206, 117);
     max-width: 100%;
     border-radius: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 } 
+
+.btn-detail-item{
+    border-radius: 30%;
+    background-color: aquamarine;
+}
 
 .contador-click{
     display: flex;
@@ -28,7 +43,7 @@
     margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
-    width: 200px;
+    width: 20rem;
     height: 50px;
 }
 .btn-min, .btn-max{
@@ -45,10 +60,10 @@
 }
 
 .btn-add-cart{
-    background-color: rgb(137, 199, 137);
+    background-color: rgb(43, 74, 250);
     color: white;
     font-weight: bold;
-    width: 80%;
+    width: 90%;
     border-radius: 40%;
 }
 .num-item{
@@ -59,6 +74,34 @@
     font-weight: bold;
     width: 20%;
 }
-.i-detail.product{
-    
+.i-detail-product{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-img-style{
+    border-radius: 30%;
+     height: 25rem; 
+}
+.card-img-style-i{
+    border-radius: 50%;
+
+}
+.i-list-detail{
+    background-color: rgb(226, 206, 117);
+    width: 60%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: flex-start;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 10%;
 }
