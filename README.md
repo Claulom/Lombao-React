@@ -1,3 +1,14 @@
+Se hace entrega de primera parte del proyecto final, 
+Se rutearon las secciones de la pagina, 
+se creo la pagina productos, donde se ve el listado de productos proveniente de la 
+base de datos .json, 
+que a su ves contienen un boton que muestra el detalle de cada producto.
+Con estilos en cada componente de la aplicacion.
+Se integra un Counter en cada detalle de producto, al llegar al stock disponible deja de contar y no baja del inicial que es 1. 
+Al hacer click en el boton agregar al carrito, salta un alert con la leyenda, "Has comprado xx items"
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
