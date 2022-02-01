@@ -38,12 +38,12 @@ body{
 
 .contador-click{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
-    width: 20rem;
+    width: 25rem;
     height: 50px;
 }
 .btn-min, .btn-max{
@@ -72,7 +72,7 @@ body{
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    width: 20%;
+    width: 50%;
 }
 .i-detail-product{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;

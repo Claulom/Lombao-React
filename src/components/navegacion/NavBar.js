@@ -21,9 +21,9 @@ const NavBar = () => {
         <li className="nav-item">
           <Link className="nav-link active" to='/Formulario' >Formulario</Link>
         </li>
-        
-        <span className="nav-link active fas fa-cart-plus">Add to Cart</span>
-      
+        <li className="nav-item">
+        <Link className="nav-link active fas fa-cart-plus" to='/Cart'>Add to Cart</Link>
+        </li>
       </ul>
     </div>
   </div>
