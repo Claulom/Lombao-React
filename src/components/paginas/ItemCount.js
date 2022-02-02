@@ -1,9 +1,6 @@
 import React from 'react'
 import "../cards/card.css";
 
-
-
-
 export const ItemCount = ({stock,onAdd}) => {
 
     let min = 1;
@@ -25,13 +22,10 @@ function decrement(){
         
  }
 
-
-
-
-function onAdd(){
-
-    alert("Compraste"  + add +  "items") 
+ function onAdd(){
+    alert("Compraste"  + add ) 
 }
+
 
     return (
         <div className="contador-click">
@@ -39,7 +33,7 @@ function onAdd(){
             <span className="num-item">{add}</span>
             <button onClick={decrement} className="btn-min">-</button>
             <button onClick={increment} className="btn-max">+</button>
-            
+            <button   className="btn-add-cart">Agregar al carrito</button> 
             <button onClick={onAdd} className="btn-add-cart">Comprar ahora</button>
            
         </div>
@@ -47,3 +41,4 @@ function onAdd(){
 }
 
 
+/* onClick={addToCart} */

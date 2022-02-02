@@ -3,22 +3,11 @@ import './card.css';
 import {ItemCount} from "../paginas/ItemCount"; 
 
 
+
 const ItemDetailProduct = ({productos}) => {
-
-    const [cant, setCant] = React.useState(0);
- if(cant === 0){
-      <ItemCount onAddCallback={addToCart}/>
     
- }else{
-        <button className="btn-add-cart">Finalizar compra</button>
- }
- function addToCart({add}){
-    const newItem = cant + add;
-    if (newItem === add){
-        setCant(newItem)
-    }
 
-} 
+
     return (
         <div className="i-detail-product">
             <img src={productos.img} alt={productos.name} className="card-img-style"/>
@@ -28,10 +17,12 @@ const ItemDetailProduct = ({productos}) => {
             <p>Precio:{productos.price}</p>
             <p>Stock:{productos.stock}</p> 
             <p>Detalle:{productos.description}</p>
-            <button  onClick={addToCart} className="btn-add-cart">Agregar al carrito</button> 
+             
+            {productos.stock ? <ItemCount stock={productos.stock} initial="1" id={productos.id} /> : <button onClick="{<carrito/>}">Finalizar compra</button>}
             
             </div>
             </div>
+            
         
     )
 }
