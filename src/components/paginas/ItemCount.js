@@ -3,6 +3,7 @@ import "../cards/card.css";
 
 
 
+
 export const ItemCount = ({stock,onAdd}) => {
 
     let min = 1;
@@ -23,24 +24,24 @@ function decrement(){
         }
         
  }
+
+
+
+
 function onAdd(){
-    
+
     alert("Compraste"  + add +  "items") 
 }
 
-/* function addToCart(quantity){
- if(stock){
-     console.log(`Agregar al carrito el item ${producto.id} con cantidad ${quantity}`)
- }
-} */
     return (
         <div className="contador-click">
             <span className="num-item">Cantidad disponible{add - stock}</span>
             <span className="num-item">{add}</span>
             <button onClick={decrement} className="btn-min">-</button>
             <button onClick={increment} className="btn-max">+</button>
+            
             <button onClick={onAdd} className="btn-add-cart">Comprar ahora</button>
-            <button onClick={onAdd} className="btn-add-cart">Agregar al carrito</button>
+           
         </div>
     )
 }

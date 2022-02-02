@@ -38,7 +38,7 @@ body{
 
 .contador-click{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
     margin-top: 5%;
     margin-left: auto;
@@ -95,8 +95,8 @@ body{
 }
 .i-list-detail{
     background-color: rgb(226, 206, 117);
-    width: 60%;
-    height: 20rem;
+    width: 80%;
+    height: 30rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
