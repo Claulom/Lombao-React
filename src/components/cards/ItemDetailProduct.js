@@ -1,12 +1,16 @@
 import React from 'react'
 import './card.css';
 import {ItemCount} from "../paginas/ItemCount"; 
+import {useState} from 'react'
 
 
 
 const ItemDetailProduct = ({productos}) => {
     
-
+const [cantCart, setCantCart] = useState(false)
+const handleAddToCart = () =>{
+    setCantCart(true)
+}
 
     return (
         <div className="i-detail-product">
@@ -17,8 +21,8 @@ const ItemDetailProduct = ({productos}) => {
             <p>Precio:{productos.price}</p>
             <p>Stock:{productos.stock}</p> 
             <p>Detalle:{productos.description}</p>
-             
-            {productos.stock ? <ItemCount stock={productos.stock} initial="1" id={productos.id} /> : <button onClick="{<carrito/>}">Finalizar compra</button>}
+            <ItemCount stock={productos.stock} initial="1" id={productos.id} />
+            {!cantCart ? <button onClick={handleAddToCart}>Añadir al carrito</button> : <button >Ir al carrito</button>}
             
             </div>
             </div>
