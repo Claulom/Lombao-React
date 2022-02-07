@@ -105,3 +105,14 @@ body{
     margin-right: 2%;
     border-radius: 10%;
 }
+
+.carrito-container{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+margin-top: 3%;
+font-size: 1.3rem;
+font-weight: bold;
+border: 2px solid rgb(226, 206, 117);
+}

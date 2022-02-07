@@ -1,10 +1,9 @@
 import React from 'react'
-import { cartContext } from '../../context/cartContext';
-import {useContext} from "react"
+
 
 const Inicio = () => {
     
-     const [] = useContext(cartContext);
+  
     
     return (
         <div>

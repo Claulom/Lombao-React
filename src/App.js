@@ -5,13 +5,13 @@ import Productos from './components/paginas/Productos';
 import Formulario from './components/paginas/Formulario';
 import Inicio from './components/paginas/Inicio';
 import { ItemListDetail } from './components/cards/ItemListDetail';
-import Cart from './components/paginas/Cart';
-import {cartContext} from "./context/cartContext";
+import CartPage from './components/paginas/CartPage';
+import {CartProvider} from "./context/CartContext";
 
 
 function App() {
   return (
-    <cartContext.Provider value={[]}>
+    <CartProvider>
       <BrowserRouter>
     <div className="App">
 
@@ -25,16 +25,16 @@ function App() {
            <Route path=':productosId' element={<ItemListDetail/>}/>    
           </Route>
           </Route>
-          <Route path='Cart' element={<Cart/>}/>
+          <Route path='Cart' element={<CartPage/>}/>
           <Route path='carrito'>
-            <Route path='carrito' element={<Cart/>}/>
+            <Route path='carrito' element={<CartPage/>}/>
           </Route>
           </Routes> 
          
           
       </div>
       </BrowserRouter>
-      </cartContext.Provider>
+      </CartProvider>
   );
 }
 
