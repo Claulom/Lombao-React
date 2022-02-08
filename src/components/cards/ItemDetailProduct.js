@@ -19,11 +19,6 @@ const handleAddToCart = () =>{
    
 } 
 
-
-function onAdd(){
-    alert("Compraste"  + add ) 
-}
-
     return (
         <div className="i-detail-product">
             <img src={productos.img} alt={productos.name} className="card-img-style"/>
@@ -35,7 +30,6 @@ function onAdd(){
             <span className="num-item">Cantidad disponible:{productos.stock} </span>
             <ItemCount add={add} setAdd={setAdd}/>
              <button onClick={handleAddToCart} className="btn-add-cart">Agregar al carrito</button>
-            <button onClick={onAdd}  className="btn-add-cart">Comprar ahora</button>
             <button onClick={Cart} className="btn-add-cart">Ir al carrito</button> 
             </div>
             </div>

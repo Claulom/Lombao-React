@@ -32,7 +32,7 @@ body{
 } 
 
 .btn-detail-item{
-    border-radius: 30%;
+    border-radius: 30% 60%;
     background-color: aquamarine;
 }
 
@@ -51,20 +51,20 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgb(113, 113, 216);
-    color: white;
+    background-color:  rgba(34,193,195,1);
+    color:rgb(30, 15, 240);
     font-size: 1.5rem;
     font-weight: bold;
     width: 30%;
-    border-radius: 50%;
+    border-radius: 20% 50%;
 }
 
 .btn-add-cart{
-    background-color: rgb(43, 74, 250);
-    color: white;
+    background-color:  rgba(34,193,195,1);
+    color: rgb(30, 15, 240);
     font-weight: bold;
-    width: 90%;
-    border-radius: 40%;
+    width: 100%;
+    border-radius: 20% 70%;
 }
 .num-item{
     display: flex;
@@ -76,7 +76,7 @@ body{
 }
 .i-detail-product{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-top: 10%;
+    margin-top: 8%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -86,11 +86,11 @@ body{
 }
 
 .card-img-style{
-    border-radius: 30%;
-     height: 25rem; 
+    border-radius: 30% 50%;
+     height: 30rem; 
 }
 .card-img-style-i{
-    border-radius: 50%;
+    border-radius: 20% 50%;
 
 }
 .i-list-detail{
