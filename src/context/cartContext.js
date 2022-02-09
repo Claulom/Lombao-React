@@ -7,15 +7,16 @@ export const CartProvider = ({children}) =>{
     
     const addItem = (item, quantity) =>{
         if (cart.some ((p) => p.id === item.id)){
-        let newItem = [...cart] 
-        let repetido = newItem.find((p) => p.id === item.id)
-            repetido.quantity += quantity
-            setCart(newItem)
+        const newItem = [...cart]
+        const repetido = newItem.find((p) => p.id === item.id)
+            repetido += quantity
+            setCart([repetido])
         }else{
-            setCart([...cart, item]);    
+            const newItem = {quantity, item}
+            setCart([...cart, newItem]);    
         }
     }
-    
+  
         const removeItem = (id) =>{
             setCart((prev)=> prev.filter((element)=> element.id !== id));
         };
@@ -24,10 +25,6 @@ export const CartProvider = ({children}) =>{
             setCart((prev) => prev.filter((element)=> element !== element));
         };
         
-      /*   const isInCart = (id)=>{
-            const repetido = cart.find(item => item.id === id)
-            return repetido;
-        } */
         
         
         return(
@@ -37,6 +34,3 @@ export const CartProvider = ({children}) =>{
     )
 }
 export const useCart = () => useContext(CartContext)
-/* const newItem = { item, quantity};
-console.log('Se agrego al carrito', newItem) */
-/*     setCart((prevState) => [...prevState, newItem]) */

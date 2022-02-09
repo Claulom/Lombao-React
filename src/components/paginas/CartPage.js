@@ -13,12 +13,11 @@ const CartPage = () => {
            
             {cart.map((compra)=>{
                 return(
-            <div key={compra.id} className="carrito-container">
+            <div key={compra.item.id} className="carrito-container">
                         <p>{compra.quantity}</p>
-                        <p>{compra.name}</p>
-                        <p>$ {compra.price}</p>
+                        <p>{compra.item.name}</p>
+                        <p>$ {compra.item.price}</p>
                         <p><button onClick={()=> removeItem(compra.id)}className="btn-detail-item" >Quitar</button></p>
-
                 </div>
             )})}
         </div>
