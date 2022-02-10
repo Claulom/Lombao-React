@@ -11,7 +11,7 @@ const ItemDetailProduct = ({productos}) => {
     const Cart = ()=>{
         navigate(`/Cart/`)
     } 
-   const {addItem} = useCart()
+    const {addItem} = useCart()
     const [add, setAdd] = useState(1);
     
 const handleAddToCart = () =>{
@@ -40,5 +40,3 @@ const handleAddToCart = () =>{
         export default ItemDetailProduct
         
         
-        {/*   <ItemCount stock={productos.stock} initial="1" id={productos.id} /> */}
-        {/*  {!cantCart ? <button onClick={handleAddToCart}>Añadir al carrito</button> : <button >Ir al carrito</button>} */}
