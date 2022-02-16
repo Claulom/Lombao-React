@@ -1,7 +1,6 @@
 import React from 'react'
 import './card.css';
 import { useNavigate } from 'react-router-dom';
-import {useCart} from "../../context/CartContext"
 export const ItemCard = ({ productos }) => {
     let navigate = useNavigate();
    

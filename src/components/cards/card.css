@@ -122,6 +122,6 @@ border: 2px solid rgb(226, 206, 117);
 .carrito-container-total{
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: flex-end;
 }

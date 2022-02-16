@@ -2,7 +2,7 @@ import React from 'react'
 import './card.css';
 import {ItemCount} from "../paginas/ItemCount"; 
 import {useState} from 'react'
-import {useCart} from "../../context/CartContext"
+import {useCart} from "../../context/cartContext"
 import { useNavigate } from 'react-router-dom';
 
 const ItemDetailProduct = ({productos}) => {

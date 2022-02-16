@@ -1,10 +1,10 @@
-import React, {useContext}from 'react'
-import {CartContext} from "../../context/CartContext"
+import React from 'react'
+import {useCart} from "../../context/cartContext"
 
 
 const CartWidget = () => {
 
-    const {cart} =useContext(CartContext)
+    const {cart} =useCart()
     
     let isInCart = 0;
 
