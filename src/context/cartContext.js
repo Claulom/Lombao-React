@@ -9,13 +9,19 @@ export const CartProvider = ({children}) =>{
 
     const addItem = (item, quantity) =>{
         if (isInCart(item.id)){
-            alert('Error: el producto ya ha sido agregado')
-            return
-        }
-
+            const addQty = cart.map((o)=>{
+                if(o.id === item.id){
+                    return {...o, quantity: quantity + o.quantity}
+                }else{
+                    return o
+                }
+            })
+            setCart(addQty)
+        }else{
         item.quantity = quantity
         const allItems = [...cart, item]
         setCart(allItems)
+    }
     }
     
     const removeItem = (itemId) =>{
@@ -33,11 +39,10 @@ export const CartProvider = ({children}) =>{
       
         const totalCompra = ()=>{
             let price = 0
-            if(cart.length > 0){
-                for (const item of cart){
-                    price += item.price * item.quantity
-                }
-            }
+            cart.forEach((element)=>{
+                price += element.price * element.quantity
+            })
+          
             return price
         }
         
@@ -49,14 +54,3 @@ export const CartProvider = ({children}) =>{
 }
 export const useCart = () => useContext(CartContext)
 
-/*  const addItem = (item, quantity) =>{
-     if (cart.some ((p) => p.id === item.id )){
-     const newItem = [...cart]
-     const repetido = newItem.find((p) => p.id === item.id )
-         repetido.quantity += quantity
-         setCart([repetido])
-     }else{
-         const newItem = {quantity, item}
-         setCart([...cart, newItem]);    
-     }
- } */

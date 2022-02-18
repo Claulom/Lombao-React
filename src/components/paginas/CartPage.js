@@ -11,6 +11,9 @@ const CartPage = () => {
     const Productos = ()=>{
         navigate(`/Productos/`)
     } 
+    const Fin = ()=>{
+        navigate(`/fin/`)
+    }
      
     if(cart.length === 0){
         return(
@@ -23,6 +26,7 @@ const CartPage = () => {
     else
      return (    
         <div>
+            <h1>Estas a un paso de obtener todo lo que querés</h1>
             {cart.map(compra=>
                     <Fragment key={compra.id} >
                         <h3 className="carrito-container">
@@ -37,6 +41,7 @@ const CartPage = () => {
             )}
             <p className="carrito-container-total">Total: $ {totalCompra()}</p>
             <button onClick={()=> clear()} className="btn-detail-item">Vaciar carrito</button>
+            <button onClick={Fin} className="btn-detail-item">Finalizar compra</button>
             </div>
     )
 }

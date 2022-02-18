@@ -5,121 +5,121 @@
                     "price": 1001, 
                     "stock": 10, 
                     "description": "Zapatillas de tela y goma en varios colores y talles",  
-                    "img": "https://picsum.photos/200"
-                   
+                    "img": "https://picsum.photos/200",
+                    "categoryId": 1
                 },
                 {"id": 2, 
                     "name": "Remeras", 
                     "price": 1002, 
                     "stock": 11, 
                     "description": "Remeras de algodón, todos los talles y colores",  
-                    "img": "https://picsum.photos/200" 
-                   
+                    "img": "https://picsum.photos/200", 
+                    "categoryId": 2
                 },
                 {"id": 3, 
                     "name": "Camperas", 
                     "price": 1003, 
                     "stock": 12, 
                     "description": "Camperas de Cuero, Jean y Lona, para todos los días",  
-                    "img": "https://picsum.photos/200" 
-
-},
+                    "img": "https://picsum.photos/200", 
+                    "categoryId": 2
+                },
                 {"id": 4, 
                     "name": "Jeans", 
                     "price": 1004, 
                     "stock": 13, 
                     "description": "Jeans de todos los colores y talles",  
-                    "img": "https://picsum.photos/200" 
-
-},
+                    "img": "https://picsum.photos/200", 
+                    "categoryId": 2
+                },
                 {"id": 5, 
                     "name": "Bermudas", 
                     "price": 1005, 
                     "stock": 14, 
                     "description": "Bermudas de Jean, Algodon y Gabardina todos los colores y talles", 
-                     "img": "https://picsum.photos/200"
-
-},
+                    "img": "https://picsum.photos/200",
+                    "categoryId":2
+                },
                 {"id": 6, 
                     "name": "Relojes", 
                     "price": 1006, 
                     "stock": 15, 
                     "description": "Relojes deportivos unisex",  
-                    "img": "https://picsum.photos/200"
-                
-             },
+                    "img": "https://picsum.photos/200",
+                    "categoryId": 3
+                },
 
                 {"id": 7, 
                     "name": "Cinturones", 
                     "price": 1007, 
                     "stock": 16, 
                     "description": "Cinturones de Cuero y Tela con varios motivos y detalles",  
-                    "img": "https://picsum.photos/200"
-
-},
+                    "img": "https://picsum.photos/200",
+                    "categoryId": 3
+                },
                 {"id": 8, 
                     "name": "Polleras", 
                     "price": 1008, 
                     "stock": 17, 
                     "description": "Polleras de todos los colores y talles",  
-                    "img": "https://picsum.photos/200" 
-
-},
+                    "img": "https://picsum.photos/200", 
+                    "categoryId": 2
+                },
                 {"id": 9, 
                     "name": "Gorras", 
                     "price": 1009, 
                     "stock": 18, 
                     "description": "Gorras con varios diseños",  
-                    "img": "https://picsum.photos/200"
-
-},
+                    "img": "https://picsum.photos/200",
+                    "categoryId": 3
+                },
                 {"id": 10, 
                     "name": "Bolsos", 
                     "price": 10010, 
                     "stock": 19, 
                     "description": "Mochilas y bolsos para todos los días", 
-                    "img": "https://picsum.photos/200" 
-
-},
+                    "img": "https://picsum.photos/200", 
+                    "categoryId": 5
+                },
                 {"id": 11, 
                     "name": "Carteras", 
                     "price": 10011, 
                     "stock": 20, 
                     "description": "Carteras de mujer de todos los materiales y colores", 
-                    "img": "https://picsum.photos/200"
-                
-            },
+                    "img": "https://picsum.photos/200",
+                    "categoryId": 5
+                },
 
                 {"id": 12, 
                     "name": "Perfumes", 
                     "price": 10012, 
                     "stock": 21, 
                     "description": "Perfumeria unisex", 
-                    "img": "https://picsum.photos/200"
-
-},
+                    "img": "https://picsum.photos/200",
+                    "categoryId": 4
+                },
                 {"id": 13, 
                     "name": "Bijouteri", 
                     "price": 10013, 
                     "stock": 22, 
                     "description": "Accesorios de acero quirurjico y enchapados oro y plata", 
-                    "img": "https://picsum.photos/200" 
-
-},
+                    "img": "https://picsum.photos/200", 
+                    "categoryId": 3
+                },
                 {"id": 14, 
                     "name": "Billeteras", 
                     "price": 10014, 
                     "stock": 23, 
                     "description": "Billeteras de cuero y tela", 
-                    "img": "https://picsum.photos/200"
-
-},
+                    "img": "https://picsum.photos/200",
+                    "categoryId": 3
+                },
                 {"id": 15, 
                     "name": "Anteojos", 
                     "price": 10015, 
                     "stock": 24, 
                     "description": "Anteojos unisex", 
-                    "img": "https://picsum.photos/200"
-   
-}
+                    "img": "https://picsum.photos/200",
+                    "categoryId": 3
+                }
  ]}

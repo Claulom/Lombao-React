@@ -5,39 +5,31 @@ import { getFirestore } from '../../firebase';
 import ItemDetailProduct from "./ItemDetailProduct";
 
 
-export const ItemListDetail = () =>{
-    const {productosId} = useParams();
+export const ItemListDetail = () => {
+    const { productosId } = useParams();
     const [productos, setProductos] = useState();
     const [cargando, setCargando] = useState(false);
 
-
     useEffect(() => {
         const db = getFirestore()
-        const productsCollection = db.collection('productos')
+        const productsCollection = db.collection('Productos')
         const idProducts = productsCollection.doc(productosId)
-
         setCargando(true)
         idProducts.get().then(response => {
-            if(!response.exists) console.log("El producto no existe")
-            setProductos({...response.data(), id: response.id})
+            if (!response.exists) console.log("El producto no existe")
+            setProductos({ ...response.data(), id: response.id })
         })
-        .finally(()=> setCargando(false))
-        /* const URL = `http://localhost:3001/productos/${productosId}`;
-        setCargando(true);
-        fetch(URL)
-        .then((response) => response.json())
-        .then((data) => setProductos(data))
-        .finally(()=> setCargando(false)) */
-    }, [productosId]);
-    
-    if(cargando || !productos) return <p>Cargando productos...</p>;
+            .finally(() => setCargando(false))
 
-return (  
-     <div className="galeria">
-        <div className="container-card-class">
+    }, [productosId]);
+
+    if (cargando || !productos) return <p>Cargando productos...</p>;
+
+    return (
+        <div className="galeria">
+            <div className="container-card-class">
+            </div>
+            <ItemDetailProduct productos={productos} />
         </div>
-        <ItemDetailProduct productos={productos} />
-        </div>
-        );
-    }; 
-    
+    );
+};

@@ -8,6 +8,9 @@ import { useNavigate } from 'react-router-dom';
 const ItemDetailProduct = ({productos}) => {
     let navigate = useNavigate();
 
+    const Productos=()=>{
+        navigate(`/Productos`)
+    }
     const Cart = ()=>{
         navigate(`/Cart/`)
     } 
@@ -23,13 +26,14 @@ const handleAddToCart = () =>{
         <div className="i-detail-product">
             <img src={productos.img} alt={productos.name} className="card-img-style"/>
             <div  className="i-list-detail">
-            <p>ID:{productos.id}</p>
-            <p>Nombre:{productos.name}</p>
-            <p>Precio:{productos.price}</p>
-            <p>Detalle:{productos.description}</p>
-            <span className="num-item">Cantidad disponible:{productos.stock} </span>
+            {/* <p>ID:{productos.id}</p> */}
+            <p>Nombre: {productos.name} </p>
+            <p>Precio: $ {productos.price} </p>
+            <p>Detalle: {productos.description} </p>
+            <span className="num-item">Cantidad disponible: {productos.stock} </span>
             <ItemCount add={add} setAdd={setAdd}/>
              <button onClick={handleAddToCart} className="btn-add-cart">Agregar al carrito</button>
+            <button onClick={Productos} className="btn-add-cart">Volver a productos</button>
             <button onClick={Cart} className="btn-add-cart">Ir al carrito</button> 
             </div>
             </div>

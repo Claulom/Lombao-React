@@ -7,21 +7,18 @@ body{
     background: linear-gradient(135deg, rgba(34,193,195,1) 23%, rgba(253,247,45,1) 100%); }
 
 
-.galeria{
-    display: grid;
-    padding-left: 5%;
-}
-
 .container-card-class{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 1%;
+    transition: all 3s;
 }
 
 .itemCard{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; 
     background-color: rgb(226, 206, 117);
     max-width: 100%;
     border-radius: 5%;
@@ -30,6 +27,11 @@ body{
     align-items: center;
     justify-content: space-between;
 } 
+
+.itemCard:hover{
+    transform: scale(1.02, 1.02);
+  cursor: pointer;
+}
 
 .btn-detail-item{
     font-weight: bold;
@@ -65,7 +67,7 @@ body{
     background-color:  rgba(34,193,195,1);
     color: rgb(30, 15, 240);
     font-weight: bold;
-    width: 100%;
+    width: 50%;
     border-radius: 20% 70%;
 }
 .num-item{
@@ -78,7 +80,7 @@ body{
 }
 .i-detail-product{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-top: 8%;
+    margin-top: 7%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -88,23 +90,30 @@ body{
 }
 
 .card-img-style{
+    padding-left: 2%;
     border-radius: 30% 50%;
-     height: 30rem; 
+    width: 15rem;
+    height: 15rem; 
+     
 }
 .card-img-style-i{
     border-radius: 20% 50%;
-
+    width: 150px;
+    height: 8rem; 
+    max-width: 60%;
 }
 .i-list-detail{
     background-color: rgb(226, 206, 117);
-    width: 80%;
-    height: 30rem;
+    width: 50%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-content: flex-start;
+    align-items: center;
     margin-left: 2%;
     margin-right: 2%;
+    padding-top: 1%;
     border-radius: 10%;
 }
 

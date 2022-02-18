@@ -11,12 +11,10 @@ export const ItemCount = ({add, setAdd}) => {
  }
     
 function decrement(){
-    setAdd((prev) => prev - 1);
-    
+    if(add > 1){
+    setAdd(add - 1);
+}
  }
-
-
-
 
     return (
         <div className="contador-click">
@@ -27,5 +25,3 @@ function decrement(){
     )
 }
 
-
-/* onClick={addToCart} */
