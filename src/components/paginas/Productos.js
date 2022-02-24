@@ -14,14 +14,14 @@ const Productos = () => {
   return (
     <div>
       <h1>Productos</h1>
-      < Menu >
+      < Menu className="cat-style">
         < MenuButton className="btn-detail-item"> Categorias </ MenuButton >
-        < MenuList >
-          < MenuLink onClick={()=> Categorias(1)}>Calzado</ MenuLink >
-          < MenuLink onClick={()=> Categorias(2)}>Ropa</ MenuLink >
-          < MenuLink onClick={()=> Categorias(3)}>Accesorios</ MenuLink >
-          < MenuLink onClick={()=> Categorias(4)}>Perfumeria</ MenuLink >
-          < MenuLink onClick={()=> Categorias(5)}>Bolsos</ MenuLink >
+        < MenuList className="cat-style">
+          < MenuLink onClick={()=> Categorias(1)} className="cat-style">Calzado</ MenuLink >
+          < MenuLink onClick={()=> Categorias(2)} className="cat-style">Ropa</ MenuLink >
+          < MenuLink onClick={()=> Categorias(3)} className="cat-style">Accesorios</ MenuLink >
+          < MenuLink onClick={()=> Categorias(4)} className="cat-style">Perfumeria</ MenuLink >
+          < MenuLink onClick={()=> Categorias(5)} className="cat-style">Bolsos</ MenuLink >
         </ MenuList >
       </ Menu >
       <ItemListCard />

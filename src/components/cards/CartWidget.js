@@ -4,11 +4,10 @@ import {useCart} from "../../context/cartContext"
 
 const CartWidget = () => {
 
-    const {cart} =useCart()
-    
+    const {cart} = useCart()
     let isInCart = 0;
-
-    cart.map((item) =>{
+   
+    cart.forEach((item) =>{
         isInCart = isInCart + item.quantity
     })
 

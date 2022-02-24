@@ -20,7 +20,6 @@ const Inicio = () => {
         <div>
             <h1>Bienvenidos a CoolStore</h1>
             {usuario ? <Productos/> : <Auth setUsuario={setUsuario}/>}
-            
         </div>
     )
 }

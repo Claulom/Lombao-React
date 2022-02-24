@@ -1,7 +1,7 @@
 import React, {useState,useEffect} from 'react'
 import {useParams} from 'react-router-dom'
 import { getFirestore } from '../../firebase'
-
+import { useNavigate } from 'react-router-dom';
 
 const SendOrder = () => {
 const {orderId} = useParams()
@@ -17,15 +17,28 @@ const finCompra = async (orderId)=>{
     setOrder({ ...response.data(), id: response.id })
     console.log(order)
 }
+useEffect(() => {
+   finCompra(orderId)  
+}, [orderId])
 
-    useEffect(() => {
-       finCompra(orderId)  
-    }, [orderId])
+
+    let navigate = useNavigate();
+    const Productos = ()=>{
+        navigate(`/Productos/`)
+    } 
+
+    //Este if es para que espere a la promesa
+    if(!order.id){
+        return <p>Cargando...</p>
+    }
 
     return (
-        <div>
-            <h1>Gracias por elegirnos! Te esperamos pronto!!!</h1>
-            <p> Tu compra:{order.buyer && order.buyer.name}</p>
+        <div >
+            <h1>{order.buyer.name} </h1>
+            <h3> Gracias por elegirnos!,Te esperamos pronto!!!</h3>
+            <p> Tu compra:</p> 
+            <p>{order.compra[0].name}</p>      
+            <button onClick={Productos} className="btn-detail-item">Ir a productos</button>
         </div>
     )
 }

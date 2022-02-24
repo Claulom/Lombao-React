@@ -39,15 +39,14 @@ const Auth = (props) => {
 
     return (
         <div>
-            {/* <h1>{registrando ? "Registrate" : "Inicia Sesión"}</h1> */}
             <button onClick={()=> setRegistrando(!registrando)} className="btn-detail-item">
             {registrando ? "¿Ya tenés cuenta? Inicia sesión" : "¿No tenés cuenta? ¡Registrate ahora!"}
             </button>
-            <form onSubmit={submitHandler}>
+            <form onSubmit={submitHandler} className="form-style">
                 <label htmlFor="email">Correo Electronico</label>
-                <input type="email" id="email" />
+                <input type="email" id="email" className="form-style_input" />
                 <label htmlFor="password">Contraseña</label>
-                <input type="password" id="password"/>
+                <input type="password" id="password" className="form-style_input"/>
                 <button type="submit" className="btn-detail-item">{registrando ? "Registrate" : "Inicia Sesión"}</button>
             </form>
         </div>

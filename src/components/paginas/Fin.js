@@ -16,6 +16,10 @@ const Fin = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault()
+        if(!name || !apellido || !phone || !correo){
+            alert('Por favor llene los campos')
+            return false
+        }
         const newOrder = { buyer: {name, apellido, phone, correo}, compra: cart, total: totalCompra() }
         console.log(newOrder)
         const db = getFirestore()
@@ -26,23 +30,21 @@ const Fin = () => {
                 navigate(`/SendOrder/${res.id}`)
             })
             .catch((err) => console.log('Ha ocurrido un error', err))
-
-
-    }
-    return (
-        <div>
+        }
+        return (
+            <div>
             <Outlet />
             <p>Finalizacion de compra</p>
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="nombre">Nombre</label>
-                <input type="text" id="nombre" value={name} onChange={(e) => setName(e.target.value)} />
-                <label htmlFor="apellido">Apellido</label>
-                <input type="text" id="apellido" value={apellido} onChange={(e) => setApellido(e.target.value)} />
-                <label htmlFor="telefono">Teléfono</label>
-                <input type="phone" id="telefono" value={phone} onChange={(e) => setPhone(e.target.value)} />
-                <label htmlFor="correo">Email</label>
-                <input type="email" id="correo" value={correo} onChange={(e) => setCorreo(e.target.value)} />
-                <input type="submit" value="Enviar compra" />
+            <form onSubmit={handleSubmit} className="form-style">
+                <label htmlFor="nombre">Nombre:</label>
+                <input type="text" id="nombre" value={name} onChange={(e) => setName(e.target.value)} className="form-style_input"/>
+                <label htmlFor="apellido">Apellido:</label>
+                <input type="text" id="apellido" value={apellido} onChange={(e) => setApellido(e.target.value)} className="form-style_input"/>
+                <label htmlFor="telefono">Teléfono:</label>
+                <input type="phone" id="telefono" value={phone} onChange={(e) => setPhone(e.target.value)} className="form-style_input"/>
+                <label htmlFor="correo">Email:</label>
+                <input type="email" id="correo" value={correo} onChange={(e) => setCorreo(e.target.value)} className="form-style_input"/>
+               <input type="submit" value="Enviar compra" className="btn-add-cart"/>
             </form>
         </div>
     )

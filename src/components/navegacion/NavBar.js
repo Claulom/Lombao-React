@@ -1,7 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import CartWidget from '../cards/CartWidget'
-import Categorias from '../paginas/Categorias';
 import firebase from 'firebase/app'
 require('firebase/auth')
 
@@ -12,6 +11,7 @@ const NavBar = () => {
   // si esta logueado, que pueda cerrar la sesión
   const logOut = () =>{
     firebase.auth().signOut()
+console.log('Ha cerrado sesion')
 }
 
   return (
@@ -23,19 +23,15 @@ const NavBar = () => {
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
                 <Link className="nav-link active" to='/' >Inicio</Link>
-                <Categorias />
               </li>
               <li className="nav-item">
                 <Link className="nav-link active" to='/Productos' >Productos</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" to='/Categorias/categoryId' >  </Link>
-              </li>
-              <li className="nav-item">
-                <Link to='/Cart' className="nav-link active fas fa-cart-plus"><CartWidget /> </Link>
+                <Link to='/Cart' className="nav-link active fas fa-cart-plus"><CartWidget /></Link>
               </li>
               <li>
-                <button onClick={logOut} className="btn-detail-item">Cerrar sesión</button>
+                {(logOut ? <button onClick={logOut} className="btn-detail-item">Cerrar sesión</button> : 'Gracias por visitarnos')}
               </li>
             </ul>
           </div>
