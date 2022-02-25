@@ -24,3 +24,7 @@ Dentro del carrito, se ve la cantidad, precio unitario y precio total de la comp
 Al tener los ítems seleccionados para la compra, puede finalizar la compra con el botón Finalizar Compra, que lo redirigirá a un fórmulario para obtener los datos del usuario. 
 Al llenar los campos, se puede enviar la compra, y se crea la orden en firebase,  donde queda la página de agradecimiento y un botón para volver a los productos. 
 
+
+
+https://user-images.githubusercontent.com/88116140/155811275-89b0f502-acb1-478e-a4f8-c26692244a1d.mp4
+
