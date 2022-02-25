@@ -16,9 +16,11 @@ const finCompra = async (orderId)=>{
     if (!response.exists) console.log("El producto no existe")
     setOrder({ ...response.data(), id: response.id })
     console.log(order)
+    
 }
 useEffect(() => {
    finCompra(orderId)  
+
 }, [orderId])
 
 

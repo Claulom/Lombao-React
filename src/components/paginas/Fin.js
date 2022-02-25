@@ -8,7 +8,7 @@ require('firebase/auth')
 
 const Fin = () => {
     let navigate = useNavigate();
-    const { cart, totalCompra } = useCart()
+    const { cart, totalCompra, clear } = useCart()
     const [name, setName] = useState('')
     const [apellido, setApellido] = useState('')
     const [phone, setPhone] = useState('')
@@ -28,8 +28,11 @@ const Fin = () => {
             .then((res) => {
                 console.log('Compra realizada correctamente', res.id)
                 navigate(`/SendOrder/${res.id}`)
+                clear()
             })
             .catch((err) => console.log('Ha ocurrido un error', err))
+
+           
         }
         return (
             <div>

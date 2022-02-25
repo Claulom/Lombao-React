@@ -9,6 +9,7 @@ import {CartProvider} from "./context/cartContext";
 import Fin from './components/paginas/Fin'
 import SendOrder from './components/paginas/SendOrder'
 import Categorias from './components/paginas/Categorias'
+import Footer from './components/cards/Footer';
 
 function App() {
   return (
@@ -43,7 +44,7 @@ function App() {
           </Route>
           </Routes> 
          
-          
+          <Footer/>
       </div>
       </BrowserRouter>
       </CartProvider>

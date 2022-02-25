@@ -1,5 +1,5 @@
 import React from 'react'
-import './card.css';
+import './styles.css';
 import {ItemCount} from "../paginas/ItemCount"; 
 import {useState} from 'react'
 import {useCart} from "../../context/cartContext"
@@ -26,10 +26,9 @@ const handleAddToCart = () =>{
         <div className="i-detail-product">
             <img src={productos.img} alt={productos.name} className="card-img-style"/>
             <div  className="i-list-detail">
-            {/* <p>ID:{productos.id}</p> */}
-            <p>Nombre: {productos.name} </p>
-            <p>Precio: $ {productos.price} </p>
-            <p>Detalle: {productos.description} </p>
+            <p> {productos.name} </p>
+            <p> $ {productos.price} </p>
+            <p> "{productos.description}" </p>
             <span className="num-item">Cantidad disponible: {productos.stock} </span>
             <ItemCount add={add} setAdd={setAdd}/>
              <button onClick={handleAddToCart} className="btn-add-cart">Agregar al carrito</button>

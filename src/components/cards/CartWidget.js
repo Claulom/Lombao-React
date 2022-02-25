@@ -11,9 +11,12 @@ const CartWidget = () => {
         isInCart = isInCart + item.quantity
     })
 
+   
+    
     return (
         <div>
-            {isInCart}
+            {(!isInCart ? null : isInCart)}
+            
         </div>
     )
 }

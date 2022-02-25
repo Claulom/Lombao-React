@@ -1,5 +1,5 @@
 import React from 'react'
-import "../cards/card.css";
+import "../cards/styles.css";
 
 export const ItemCount = ({add, setAdd}) => {
 

@@ -1,4 +1,4 @@
-import '../cards/card.css';
+import '../cards/styles.css';
 import {ItemListCard} from "../cards/ItemListCard"
 import {Menu,MenuList,MenuButton,MenuLink,} from "@reach/menu-button";
 import "@reach/menu-button/styles.css";
@@ -13,7 +13,7 @@ const Productos = () => {
   }
   return (
     <div>
-      <h1>Productos</h1>
+      <h2>Productos</h2>
       < Menu className="cat-style">
         < MenuButton className="btn-detail-item"> Categorias </ MenuButton >
         < MenuList className="cat-style">

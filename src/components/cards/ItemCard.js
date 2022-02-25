@@ -1,5 +1,5 @@
 import React from 'react'
-import './card.css';
+import './styles.css';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -14,8 +14,8 @@ export const ItemCard = ({ productos }) => {
         <div className="container-card-class">
         <div className="itemCard">
             <img  src={productos.img} alt={productos.name} className="card-img-style-i"/>
-            <p>Nombre: {productos.name} </p>
-            <p>Precio: ${productos.price}</p>
+            <p> {productos.name} </p>
+            <p> ${productos.price}</p>
             <button onClick={detail} className="btn-detail-item">Ver detalle</button>
          
         </div>
