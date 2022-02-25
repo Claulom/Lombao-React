@@ -37,9 +37,10 @@ useEffect(() => {
     return (
         <div >
             <h1>{order.buyer.name} </h1>
-            <h3> Gracias por elegirnos!,Te esperamos pronto!!!</h3>
+            <h3> Gracias por elegirnos!, Te esperamos pronto!!!</h3>
             <p> Tu compra:</p> 
-            <p>{order.compra[0].name}</p>      
+            <p>{order.compra[0].name}</p>   
+            <p>El Id de tu orden es: {order.id}</p>    
             <button onClick={Productos} className="btn-detail-item">Ir a productos</button>
         </div>
     )
